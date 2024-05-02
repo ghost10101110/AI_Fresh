@@ -1,4 +1,4 @@
-AI Talk with Switches - Basic
+AI Talk with Switches - Basic & AI Talk with Switches - Adv
 
 Opis
 
@@ -29,3 +29,7 @@ Upewnij się, że masz zainstalowanego Pythona.
 Otwórz terminal.
 Przejdź do katalogu, gdzie znajduje się skrypt.
 Uruchom skrypt wpisując python ai_talk_with_switches - basic.py.
+
+HASŁO DO: AI Talk with Switches - Adv.zip:
+  1) Wejdź na stronę: https://aifresh.beehiiv.com/p/ai-rozmawia-ze-switchami
+  1) Jest dostępne tylko dla zalogowanych
