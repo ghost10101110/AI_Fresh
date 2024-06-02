@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from talking_with_switches import NetworkAssistant
+from assistant import NetworkAssistant  
 
 load_dotenv()
 app = FastAPI()
@@ -20,9 +20,9 @@ async def ask(request: QuestionRequest):
         raise HTTPException(status_code=400, detail="Question content is empty")
     
     api_key = os.getenv("OPENAI_API_KEY")
-    assistant = NetworkAssistant(api_key=api_key)
+    assistant_ai = NetworkAssistant(api_key=api_key)
     print(request.chat_history)
-    answer = assistant.make_decision(request.question, request.chat_history)
+    answer = assistant_ai.make_decision(request.question, request.chat_history)
     print("answer: ", answer)
     
     if not answer:
